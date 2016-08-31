@@ -32,7 +32,7 @@ For Windows 10, version 1511, Windows Update for Business is enabled using a se
 
 ## Eligible devices
 
-All devices running Windows 10 Pro, Enterprise, and Education on the Current Branch for Business (CBB) are Windows Update for Business eligible.
+All devices running Windows 10 Pro, Enterprise, and Education are Windows Update for Business eligible.
 
 ## OS upgrades and updates
 
@@ -41,9 +41,10 @@ In Windows 10, Windows Update for Business recognizes three deployment categori
     -   Examples: Windows 10 (Build 10240) to Windows 10, version 1511; CBB 1 to CBB 2
         **Note**  
         In the Windows 10 servicing model, new CBBs will be declared 2-3 times per year.
-         
+         (in the policy the upgrades are called feature updates)
 -   **Updates**
     -   General OS updates, typically released the second Tuesday of each month. These include Security, Critical, and Driver updates.
+        in the policy these updates are called quality updates
 -   **Other/non-deferrable**
     -   Definition updates (these cannot be deferred)
 Both upgrades and updates can be deferred from deployment to client machines by a Windows Update for Business administrator within a bounded rage of time from when those updates are first made available on the Windows Update service. This deferral capability allows administrators to validate deployments as they are pushed to all their Windows Update for Business enrolled clients. The following table defines maximum deferral periods allowed by deployment type:
@@ -58,15 +59,15 @@ Both upgrades and updates can be deferred from deployment to client machines by 
 </tr>
 <tr>
 <td>OS upgrades</td>
-<td>8 months</td>
-<td>1 month</td>
+<td>180 days</td>
+<td>1 day</td>
 <td>Upgrade</td>
 <td>3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</td>
 </tr>
 <tr>
 <td rowspan="3">OS updates</td>
-<td rowspan="3">4 weeks</td>
-<td rowspan="3">1 week</td>
+<td rowspan="3">180 days</td>
+<td rowspan="3">1 day</td>
 <td>Security updates</td>
 <td>0FA1201D-4330-4FA8-8AE9-B877473B6441</td>
 </tr>
